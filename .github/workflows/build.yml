@@ -10,5 +10,5 @@ jobs:
           docker build -t evansantos/dorker -f Dockerfile . 
       - name: docker npm test
         run: |
-          docker -e CI=true evansantos/dorker npm run test
+          docker run -e CI=true evansantos/dorker npm run test
      
