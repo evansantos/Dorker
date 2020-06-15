@@ -1,3 +1,5 @@
--  name: Build docker images
-   with:
-    dockerfile: './Dockerfile.dev'
+name: Build Docker image
+on: [push]
+uses: docker/build-push-action@v1.1.0
+with:
+  dockerfile: Dockerfile.dev
